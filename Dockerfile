@@ -6,7 +6,7 @@ COPY . /app
 
 RUN apt-get update
 
-RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
+RUN apt-get update && apt-get install libgomp1 libomp-dev  -y
 
 RUN pip install --no-cache-dir -r requirements.txt
 
